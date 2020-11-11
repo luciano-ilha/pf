@@ -7,7 +7,7 @@
   background-color: $purple;
   &-item {
     a {
-      font-family: $sec-font;
+      font-family: $navfont;
       font-size: 22px;
       color: $white;
       margin-left: 50px;
@@ -24,24 +24,90 @@
 }
 
 .main {
-  height: 600px;
-  background-color: $white;
+  height: 650px;
+  background-image: url("../assets/images/bg-pf.jpg");
+  background-position: center;
+  background-repeat: no-repeat;;
+  background-size: cover;
   &-container {
     position: relative;
-    top: 200px;
+    top: 110px;
     align-items: center;
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
     &-icons {
       flex-direction: column;
       justify-content: space-between;
+      span {
+        padding: 10px;
+        background-color: $purple;
+        margin-bottom: 15px;
+        border-radius: 50%;
+        &:hover {
+          cursor: pointer;
+          animation: bounce 1s linear;
+        }
+        @keyframes bounce {
+          20%,50%,80%,to{
+            transform: translateY(0);
+          }
+          40%{
+            transform: translateY(-11px);
+          }
+          70%{
+            transform: translateY(-6px);
+          }
+          90%{
+            transform: translateY(-3px);
+          }
+        }
+      }
       img {
         width: 30px;
+        filter: invert(78%) sepia(28%) saturate(4798%) hue-rotate(359deg) brightness(102%) contrast(105%);
       }
     }
     &-content {
       position: relative;
-      left: 30px;
+      left: 80px;
+      color: $purple;
+      font-family: $titlefont;
+      font-size: 30px;
+      &-title {
+        display: inline-block;
+        font-size: 50px;
+        line-height: 65px;
+        text-shadow: 2px 2px $yellow;
+        &:nth-child(3) {
+          position: relative;
+          left: 40px;
+        }
+      }
+      &-title2 {
+        font-size: 55px;
+        position: relative;
+        left: 110px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        text-shadow: 1px 1px $purple;
+
+      }
+      &-body {
+        font-family: $textfont;
+        font-size: 28px;
+        background-color: $purple;
+        color: $yellow;
+        padding: 20px;
+        border-radius: 15px;
+        width: 60vw;
+        margin-top: 25px;
+        line-height: 33px;
+      }
     }
   }
+}
+
+.whiteback {
+  height: 100%;
+  background-color: rgba(253,240,213, 0.6);
 }

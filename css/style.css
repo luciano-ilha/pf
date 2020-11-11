@@ -21,19 +21,73 @@
     filter: invert(78%) sepia(28%) saturate(4798%) hue-rotate(359deg) brightness(102%) contrast(105%); }
 
 .main {
-  height: 600px;
-  background-color: #fdf0d5; }
+  height: 650px;
+  background-image: url("../assets/images/bg-pf.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
   .main-container {
     position: relative;
-    top: 200px;
+    top: 110px;
     align-items: center;
-    width: 95%;
+    width: 90%;
     margin: 0 auto; }
     .main-container-icons {
       flex-direction: column;
       justify-content: space-between; }
+      .main-container-icons span {
+        padding: 10px;
+        background-color: #30064e;
+        margin-bottom: 15px;
+        border-radius: 50%; }
+        .main-container-icons span:hover {
+          cursor: pointer;
+          animation: bounce 1s linear; }
+
+@keyframes bounce {
+  20%, 50%, 80%, to {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-11px); }
+  70% {
+    transform: translateY(-6px); }
+  90% {
+    transform: translateY(-3px); } }
       .main-container-icons img {
-        width: 30px; }
+        width: 30px;
+        filter: invert(78%) sepia(28%) saturate(4798%) hue-rotate(359deg) brightness(102%) contrast(105%); }
     .main-container-content {
       position: relative;
-      left: 30px; }
+      left: 80px;
+      color: #30064e;
+      font-family: "Source Code Pro", monospace;
+      font-size: 30px; }
+      .main-container-content-title {
+        display: inline-block;
+        font-size: 50px;
+        line-height: 65px;
+        text-shadow: 2px 2px #ffb700; }
+        .main-container-content-title:nth-child(3) {
+          position: relative;
+          left: 40px; }
+      .main-container-content-title2 {
+        font-size: 55px;
+        position: relative;
+        left: 110px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        text-shadow: 1px 1px #30064e; }
+      .main-container-content-body {
+        font-family: "Cabin", sans-serif;
+        font-size: 28px;
+        background-color: #30064e;
+        color: #ffb700;
+        padding: 20px;
+        border-radius: 15px;
+        width: 60vw;
+        margin-top: 25px;
+        line-height: 33px; }
+
+.whiteback {
+  height: 100%;
+  background-color: rgba(253, 240, 213, 0.6); }
