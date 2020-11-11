@@ -31,7 +31,7 @@
     filter: invert(78%) sepia(28%) saturate(4798%) hue-rotate(359deg) brightness(102%) contrast(105%); }
 
 .main {
-  height: 650px;
+  height: 680px;
   background-image: url("../assets/images/bg-pf.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -71,32 +71,34 @@
       left: 80px;
       color: #30064e;
       font-family: "Source Code Pro", monospace;
-      font-size: 30px; }
+      font-size: 35px; }
       .main-container-content-title {
         display: inline-block;
         font-size: 50px;
         line-height: 65px;
-        text-shadow: 2px 2px #ffb700; }
+        text-shadow: 2.5px 2.5px #ffb700; }
         .main-container-content-title:nth-child(3) {
           position: relative;
-          left: 40px; }
+          left: 50px; }
       .main-container-content-title2 {
-        font-size: 55px;
+        font-family: "Syne Mono", monospace;
+        font-size: 60px;
         position: relative;
         left: 110px;
         margin-top: 40px;
         margin-bottom: 50px;
-        text-shadow: 1px 1px #30064e; }
+        text-shadow: 2.5px 2.5px #30064e; }
       .main-container-content-body {
         font-family: "Cabin", sans-serif;
         font-size: 28px;
+        letter-spacing: 1.5px;
         background-color: #30064e;
         color: #ffb700;
         padding: 20px;
         border-radius: 15px;
-        width: 60vw;
+        width: 70vw;
         margin-top: 25px;
-        line-height: 33px; }
+        line-height: 40px; }
 
 .whiteback {
   height: 100%;

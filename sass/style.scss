@@ -32,7 +32,7 @@
 }
 
 .main {
-  height: 650px;
+  height: 680px;
   background-image: url("../assets/images/bg-pf.jpg");
   background-position: center;
   background-repeat: no-repeat;;
@@ -80,36 +80,38 @@
       left: 80px;
       color: $purple;
       font-family: $titlefont;
-      font-size: 30px;
+      font-size: 35px;
       &-title {
         display: inline-block;
         font-size: 50px;
         line-height: 65px;
-        text-shadow: 2px 2px $yellow;
+        text-shadow: 2.5px 2.5px $yellow;
         &:nth-child(3) {
           position: relative;
-          left: 40px;
+          left: 50px;
         }
       }
       &-title2 {
-        font-size: 55px;
+        font-family: $navfont;
+        font-size: 60px;
         position: relative;
         left: 110px;
         margin-top: 40px;
         margin-bottom: 50px;
-        text-shadow: 1px 1px $purple;
+        text-shadow: 2.5px 2.5px $purple;
 
       }
       &-body {
         font-family: $textfont;
         font-size: 28px;
+        letter-spacing: 1.5px;
         background-color: $purple;
         color: $yellow;
         padding: 20px;
         border-radius: 15px;
-        width: 60vw;
+        width: 70vw;
         margin-top: 25px;
-        line-height: 33px;
+        line-height: 40px;
       }
     }
   }
