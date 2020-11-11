@@ -1,0 +1,14 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: #30064e; }
+  .nav-item a {
+    font-size: 22px;
+    color: #fdf0d5;
+    margin-left: 50px; }
+  .nav img {
+    margin-left: 10px;
+    width: 30px;
+    filter: invert(78%) sepia(28%) saturate(4798%) hue-rotate(359deg) brightness(102%) contrast(105%); }
