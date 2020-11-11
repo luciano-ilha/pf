@@ -1,3 +1,11 @@
 $purple: rgb(48, 6, 78);
 $white: rgb(253,240,213);
 $yellow: rgb(255,183,0);
+$main-font: 'Source Code Pro', monospace;
+$sec-font: 'Syne Mono', monospace;
+
+.main-container-icons,
+.main-container,
+.nav {
+  display: flex;
+}

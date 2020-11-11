@@ -1,22 +1,47 @@
 @import 'config';
-@import 'tipography';
 
 .nav {
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 70px;
   background-color: $purple;
   &-item {
     a {
+      font-family: $sec-font;
       font-size: 22px;
       color: $white;
       margin-left: 50px;
+    }
+    &:first-child a {
+      margin-left: 0;
     }
   }
   img {
     margin-left: 10px;
     width: 30px;
     filter: invert(78%) sepia(28%) saturate(4798%) hue-rotate(359deg) brightness(102%) contrast(105%);
+  }
+}
+
+.main {
+  height: 600px;
+  background-color: $white;
+  &-container {
+    position: relative;
+    top: 200px;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+    &-icons {
+      flex-direction: column;
+      justify-content: space-between;
+      img {
+        width: 30px;
+      }
+    }
+    &-content {
+      position: relative;
+      left: 30px;
+    }
   }
 }
