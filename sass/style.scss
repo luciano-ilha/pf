@@ -9,8 +9,16 @@
     a {
       font-family: $navfont;
       font-size: 22px;
-      color: $white;
       margin-left: 50px;
+      color: $white;
+      &:hover {
+        animation: color-change 0.4s infinite;
+          @keyframes color-change {
+            0% { color: $white; }
+            50% { color: $yellow; }
+            100% { color: $white; }
+          }
+      }
     }
     &:first-child a {
       margin-left: 0;

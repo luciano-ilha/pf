@@ -11,8 +11,18 @@
   .nav-item a {
     font-family: "Syne Mono", monospace;
     font-size: 22px;
-    color: #fdf0d5;
-    margin-left: 50px; }
+    margin-left: 50px;
+    color: #fdf0d5; }
+    .nav-item a:hover {
+      animation: color-change 0.4s infinite; }
+
+@keyframes color-change {
+  0% {
+    color: #fdf0d5; }
+  50% {
+    color: #ffb700; }
+  100% {
+    color: #fdf0d5; } }
   .nav-item:first-child a {
     margin-left: 0; }
   .nav img {
