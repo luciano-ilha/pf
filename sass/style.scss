@@ -150,29 +150,89 @@
       }
     }
     &-top {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-gap: 30px;
       &-image {
-        width: 55%;
-        margin-right: 20px;
-        a img {
-          width: 100%;
-        }
+        width: 100%;
+        background-image: url("../assets/images/gameshark-scrshot.png");
+        background-position: center;
+        background-size: cover;
+        background-attachment: scroll;
       }
       &-right {
         justify-content: space-evenly;
-        width: 45%;
         flex-direction: column;
         &-title {
           font-family: $titlefont;
           font-size: 30px;
           color: $purple;
-          margin-bottom: 25px;
+          margin-bottom: 30px;
         }
         &-text {
           font-family: $textfont;
           font-size: 20px;
           color: $purple;
           line-height: 28px;
-          margin-bottom: 25px;
+          margin-bottom: 30px;
+        }
+        &-icons {
+          align-items: center;
+          margin-bottom: 30px;
+          &-item1 {
+            width: 45px;
+            margin-right: 13px;
+          }
+          &-item2 {
+            width: 45px;
+            margin-right: 13px;
+          }
+          &-item3 {
+            width: 62px;
+            margin-right: 13px;
+          }
+          &-item4 {
+            width: 57px;
+            margin-right: 13px;
+          }
+          &-item5 {
+            width: 90px;
+            margin-right: 13px;
+          }
+        }
+        &-buttons {
+          a {
+            font-family: $navfont;
+            font-size: 20px;
+            width: fit-content;
+            background-color: $purple;
+            color: $white;
+            text-align: center;
+            border-radius: 8px;
+            &:first-child {
+              padding: 18px 23px;
+              margin-right: 20px;
+            }
+            &:nth-child(2) {
+              padding: 13px 23px 18px;
+            }
+            img {
+              position: relative;
+              top: 3px;
+              width: 23px;
+              filter: invert(88%) sepia(3%) saturate(2690%) hue-rotate(332deg) brightness(112%) contrast(99%);
+            }
+            &:hover {
+              cursor: pointer;
+              animation: color-change 0.4s infinite;
+              @keyframes color-change {
+                0% { color: $white; }
+                50% { color: $yellow; }
+                100% { color: $white; }
+              }
+            }
+          }
         }
       }
     }
