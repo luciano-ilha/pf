@@ -1,3 +1,4 @@
+.portfolio-container-grid-item1,
 .portfolio-container-top-right-buttons,
 .portfolio-container-top-right,
 .portfolio-container-title,
@@ -38,7 +39,8 @@
   background-image: url("../assets/images/bg-pf.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
   .main-container {
     position: relative;
     top: 110px;
@@ -105,7 +107,7 @@
         line-height: 40px; }
 
 .portfolio {
-  height: 800px;
+  height: 1200px;
   background: #ffb700;
   background: -webkit-gradient(left top, right top, color-stop(0%, #ffb700), color-stop(10%, #f7cf94), color-stop(28%, #fae2b6), color-stop(69%, #fae8c5), color-stop(91%, #fad9a0), color-stop(100%, #ffb700));
   background: linear-gradient(to right, #ffb700 0%, #f7cf94 10%, #fae2b6 28%, #fae8c5 69%, #fad9a0 91%, #ffb700 100%);
@@ -122,6 +124,7 @@
         width: 355px;
         font-family: "Syne Mono", monospace;
         font-size: 33px;
+        font-weight: 900;
         color: #30064e;
         margin-right: 10px; }
       .portfolio-container-title-line {
@@ -130,15 +133,17 @@
         border-bottom: 5px solid #30064e; }
     .portfolio-container-top {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 1fr;
-      grid-gap: 30px; }
+      grid-gap: 30px;
+      margin-bottom: 30px; }
       .portfolio-container-top-image {
         width: 100%;
         background-image: url("../assets/images/gameshark-scrshot.png");
         background-position: center;
         background-size: cover;
-        background-attachment: scroll; }
+        background-attachment: scroll;
+        box-shadow: -12px 6px 21px -1px rgba(0, 0, 0, 0.8); }
       .portfolio-container-top-right {
         justify-content: space-evenly;
         flex-direction: column; }
@@ -200,6 +205,48 @@
     color: #ffb700; }
   100% {
     color: #fdf0d5; } }
+    .portfolio-container-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 250px; }
+      .portfolio-container-grid-item1 {
+        flex-direction: column;
+        background-image: url("../assets/images/tascreenshot01.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: -12px 6px 21px -1px rgba(0, 0, 0, 0.8);
+        align-items: center; }
+        .portfolio-container-grid-item1-shadow {
+          position: absolute;
+          height: 250px;
+          width: 33%;
+          background: black;
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.472426) 76%, rgba(0, 0, 0, 0.615284) 85%, rgba(0, 0, 0, 0.713323) 90%, black 100%);
+          z-index: 1; }
+        .portfolio-container-grid-item1-title {
+          position: relative;
+          top: 60px;
+          font-family: "Source Code Pro", monospace;
+          font-size: 33px;
+          color: #30064e;
+          background-color: #fdf0d5;
+          width: 100%;
+          text-align: center;
+          z-index: 2; }
+        .portfolio-container-grid-item1-text {
+          position: relative;
+          top: 110px;
+          font-family: "Cabin", sans-serif;
+          font-size: 19px;
+          font-weight: 900;
+          text-shadow: 0.3px 0.3px #30064e;
+          background-color: rgba(253, 240, 213, 0.7);
+          color: #30064e;
+          width: 90%;
+          z-index: 2;
+          padding: 5px;
+          border-radius: 5px; }
 
 .whiteback {
   height: 100%;
