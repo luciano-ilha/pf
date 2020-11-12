@@ -37,9 +37,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  // @media screen and (max-width: $break-large) {
-  //   background-position: bottom;
-  // }
   &-container {
     position: relative;
     top: 110px;
@@ -116,6 +113,44 @@
         min-width: 900px;
         margin-top: 25px;
         line-height: 40px;
+      }
+    }
+  }
+}
+
+.portfolio{
+  height: 800px;
+  background: rgba(255,183,0,1);
+  background: -moz-linear-gradient(left, rgba(255,183,0,1) 0%, rgba(247,207,148,1) 10%, rgba(250,226,182,1) 28%, rgba(250,232,197,1) 69%, rgba(250,217,160,1) 91%, rgba(255,183,0,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,183,0,1)), color-stop(10%, rgba(247,207,148,1)), color-stop(28%, rgba(250,226,182,1)), color-stop(69%, rgba(250,232,197,1)), color-stop(91%, rgba(250,217,160,1)), color-stop(100%, rgba(255,183,0,1)));
+  background: -webkit-linear-gradient(left, rgba(255,183,0,1) 0%, rgba(247,207,148,1) 10%, rgba(250,226,182,1) 28%, rgba(250,232,197,1) 69%, rgba(250,217,160,1) 91%, rgba(255,183,0,1) 100%);
+  background: -o-linear-gradient(left, rgba(255,183,0,1) 0%, rgba(247,207,148,1) 10%, rgba(250,226,182,1) 28%, rgba(250,232,197,1) 69%, rgba(250,217,160,1) 91%, rgba(255,183,0,1) 100%);
+  background: -ms-linear-gradient(left, rgba(255,183,0,1) 0%, rgba(247,207,148,1) 10%, rgba(250,226,182,1) 28%, rgba(250,232,197,1) 69%, rgba(250,217,160,1) 91%, rgba(255,183,0,1) 100%);
+  background: linear-gradient(to right, rgba(255,183,0,1) 0%, rgba(247,207,148,1) 10%, rgba(250,226,182,1) 28%, rgba(250,232,197,1) 69%, rgba(250,217,160,1) 91%, rgba(255,183,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb700', endColorstr='#ffb700', GradientType=1 );
+  &-container {
+    position: relative;
+    top: 95px;
+    margin: 0 auto;
+    width: 90%;
+    &-title {
+      display: flex;
+      overflow: hidden;
+      &-text {
+        position: relative;
+        left: 130px;
+        width: 273px;
+        font-family: $navfont;
+        font-size: 33px;
+        color: $purple;
+        margin-right: 18px;
+      }
+      &-line {
+        position: relative;
+        align-self: center;
+        left: 130px;
+        width: 70%;
+        border-bottom: 5px solid $purple;
       }
     }
   }

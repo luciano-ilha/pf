@@ -101,6 +101,35 @@
         margin-top: 25px;
         line-height: 40px; }
 
+.portfolio {
+  height: 800px;
+  background: #ffb700;
+  background: -webkit-gradient(left top, right top, color-stop(0%, #ffb700), color-stop(10%, #f7cf94), color-stop(28%, #fae2b6), color-stop(69%, #fae8c5), color-stop(91%, #fad9a0), color-stop(100%, #ffb700));
+  background: linear-gradient(to right, #ffb700 0%, #f7cf94 10%, #fae2b6 28%, #fae8c5 69%, #fad9a0 91%, #ffb700 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb700', endColorstr='#ffb700', GradientType=1 ); }
+  .portfolio-container {
+    position: relative;
+    top: 95px;
+    margin: 0 auto;
+    width: 90%; }
+    .portfolio-container-title {
+      display: flex;
+      overflow: hidden; }
+      .portfolio-container-title-text {
+        position: relative;
+        left: 130px;
+        width: 273px;
+        font-family: "Syne Mono", monospace;
+        font-size: 33px;
+        color: #30064e;
+        margin-right: 18px; }
+      .portfolio-container-title-line {
+        position: relative;
+        align-self: center;
+        left: 130px;
+        width: 70%;
+        border-bottom: 5px solid #30064e; }
+
 .whiteback {
   height: 100%;
   background-color: rgba(253, 240, 213, 0.6); }
