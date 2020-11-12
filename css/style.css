@@ -111,23 +111,19 @@
     position: relative;
     top: 95px;
     margin: 0 auto;
-    width: 90%; }
+    max-width: 77%; }
     .portfolio-container-title {
       display: flex;
-      overflow: hidden; }
+      justify-content: space-around; }
       .portfolio-container-title-text {
-        position: relative;
-        left: 130px;
-        width: 273px;
+        width: 355px;
         font-family: "Syne Mono", monospace;
         font-size: 33px;
         color: #30064e;
-        margin-right: 18px; }
+        margin-right: 10px; }
       .portfolio-container-title-line {
-        position: relative;
         align-self: center;
-        left: 130px;
-        width: 70%;
+        width: 90%;
         border-bottom: 5px solid #30064e; }
 
 .whiteback {
