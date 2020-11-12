@@ -1,3 +1,6 @@
+.portfolio-container-top-right,
+.portfolio-container-top,
+.portfolio-container-title,
 .main-container-icons,
 .main-container,
 .nav {
@@ -113,8 +116,8 @@
     margin: 0 auto;
     max-width: 77%; }
     .portfolio-container-title {
-      display: flex;
-      justify-content: space-around; }
+      justify-content: space-around;
+      margin-bottom: 95px; }
       .portfolio-container-title-text {
         width: 355px;
         font-family: "Syne Mono", monospace;
@@ -125,6 +128,26 @@
         align-self: center;
         width: 90%;
         border-bottom: 5px solid #30064e; }
+    .portfolio-container-top-image {
+      width: 55%;
+      margin-right: 20px; }
+      .portfolio-container-top-image a img {
+        width: 100%; }
+    .portfolio-container-top-right {
+      justify-content: space-evenly;
+      width: 45%;
+      flex-direction: column; }
+      .portfolio-container-top-right-title {
+        font-family: "Source Code Pro", monospace;
+        font-size: 30px;
+        color: #30064e;
+        margin-bottom: 25px; }
+      .portfolio-container-top-right-text {
+        font-family: "Cabin", sans-serif;
+        font-size: 20px;
+        color: #30064e;
+        line-height: 28px;
+        margin-bottom: 25px; }
 
 .whiteback {
   height: 100%;

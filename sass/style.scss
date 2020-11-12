@@ -134,8 +134,8 @@
     margin: 0 auto;
     max-width: 77%;
     &-title {
-      display: flex;
       justify-content: space-around;
+      margin-bottom: 95px;
       &-text {
         width: 355px;
         font-family: $navfont;
@@ -150,7 +150,31 @@
       }
     }
     &-top {
-
+      &-image {
+        width: 55%;
+        margin-right: 20px;
+        a img {
+          width: 100%;
+        }
+      }
+      &-right {
+        justify-content: space-evenly;
+        width: 45%;
+        flex-direction: column;
+        &-title {
+          font-family: $titlefont;
+          font-size: 30px;
+          color: $purple;
+          margin-bottom: 25px;
+        }
+        &-text {
+          font-family: $textfont;
+          font-size: 20px;
+          color: $purple;
+          line-height: 28px;
+          margin-bottom: 25px;
+        }
+      }
     }
   }
 }
