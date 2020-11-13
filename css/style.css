@@ -29,7 +29,7 @@
   0% {
     color: #fdf0d5; }
   50% {
-    color: #ffb700; }
+    color: #ffdc00; }
   100% {
     color: #fdf0d5; } }
   .nav-item:first-child a {
@@ -37,7 +37,7 @@
   .nav img {
     margin-left: 10px;
     width: 30px;
-    filter: invert(78%) sepia(28%) saturate(4798%) hue-rotate(359deg) brightness(102%) contrast(105%); }
+    filter: invert(70%) sepia(100%) saturate(457%) hue-rotate(360deg) brightness(105%) contrast(105%); }
 
 .main {
   height: 680px;
@@ -75,7 +75,7 @@
     transform: translateY(-3px); } }
       .main-container-icons img {
         width: 30px;
-        filter: invert(78%) sepia(28%) saturate(4798%) hue-rotate(359deg) brightness(102%) contrast(105%); }
+        filter: invert(70%) sepia(100%) saturate(457%) hue-rotate(360deg) brightness(105%) contrast(105%); }
     .main-container-content {
       position: relative;
       left: 80px;
@@ -86,7 +86,7 @@
         display: inline-block;
         font-size: 50px;
         line-height: 65px;
-        text-shadow: 2.5px 2.5px #ffb700; }
+        text-shadow: 2.5px 2.5px #ffdc00; }
         .main-container-content-title:nth-child(3) {
           position: relative;
           left: 50px; }
@@ -103,7 +103,7 @@
         font-size: 28px;
         letter-spacing: 1.5px;
         background-color: #30064e;
-        color: #ffb700;
+        color: #ffdc00;
         padding: 20px;
         border-radius: 15px;
         width: 70vw;
@@ -113,10 +113,7 @@
 
 .portfolio {
   height: 1070px;
-  background: #ffb700;
-  background: -webkit-gradient(left top, right top, color-stop(0%, #ffb700), color-stop(10%, #f7cf94), color-stop(28%, #fae2b6), color-stop(69%, #fae8c5), color-stop(91%, #fad9a0), color-stop(100%, #ffb700));
-  background: linear-gradient(to right, #ffb700 0%, #f7cf94 10%, #fae2b6 28%, #fae8c5 69%, #fad9a0 91%, #ffb700 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb700', endColorstr='#ffb700', GradientType=1 ); }
+  background: #fdf0d5; }
   .portfolio-container {
     position: relative;
     top: 95px;
@@ -148,7 +145,7 @@
         background-position: center;
         background-size: cover;
         background-attachment: scroll;
-        box-shadow: -12px 6px 21px -1px rgba(0, 0, 0, 0.8); }
+        box-shadow: -21px 21px 46px 0px rgba(0, 0, 0, 0.75); }
       .portfolio-container-top-right {
         justify-content: space-evenly;
         flex-direction: column; }
@@ -207,7 +204,7 @@
   0% {
     color: #fdf0d5; }
   50% {
-    color: #ffb700; }
+    color: #ffdc00; }
   100% {
     color: #fdf0d5; } }
     .portfolio-container-grid {
@@ -221,7 +218,7 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        box-shadow: -12px 6px 21px -1px rgba(0, 0, 0, 0.8);
+        box-shadow: -21px 21px 46px 0px rgba(0, 0, 0, 0.75);
         align-items: center; }
         .portfolio-container-grid-item1-shadow {
           position: absolute;
@@ -276,7 +273,7 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        box-shadow: -2px 9px 21px -1px rgba(0, 0, 0, 0.8);
+        box-shadow: 0px 21px 46px 0px rgba(0, 0, 0, 0.75);
         align-items: center; }
         .portfolio-container-grid-item2-shadow {
           position: absolute;
@@ -331,7 +328,7 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        box-shadow: 10px 9px 21px -1px rgba(0, 0, 0, 0.8);
+        box-shadow: 21px 21px 46px 0px rgba(0, 0, 0, 0.75);
         align-items: center; }
         .portfolio-container-grid-item3-shadow {
           position: absolute;
