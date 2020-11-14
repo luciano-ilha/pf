@@ -425,6 +425,74 @@
   }
 }
 
+.about {
+  padding: 100px 0;
+  &-container {
+    margin: 0 auto;
+    max-width: 77%;
+    &-top {
+      flex-direction: column;
+      margin-bottom: 100px;
+      &-title {
+        font-family: $navfont;
+        font-size: 50px;
+        color: $purple;
+        margin-bottom: 30px;
+      }
+      &-text {
+        font-family: $textfont;
+        font-size: 22px;
+        max-width: 60%;
+        line-height: 30px;
+        margin-bottom: 30px;
+      }
+      &-button {
+        font-family: $navfont;
+        font-weight: 700;
+        font-size: 23px;
+        width: fit-content;
+        padding: 15px;
+        background-color: $yellow;
+        color: $purple;
+        border-radius: 8px;
+      }
+    }
+    &-line {
+      display: block;
+      border-bottom: 5px solid $purple;
+      margin-bottom: 100px;
+    }
+    &-bottom {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+      &-box {
+        &-title {
+          margin-bottom: 40px;
+          img {
+            width: 30px;
+            margin-right: 10px;
+          }
+          h3 {
+            font-family: $titlefont;
+            font-size: 30px;
+          }
+        }
+        &-list {
+          font-family: $textfont;
+          font-size: 20px;
+          list-style-type: disc;
+          &-text {
+            position: relative;
+            left: 21px;
+            margin-bottom: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
 .whiteback {
   height: 100%;
   background-color: rgba(253,240,213, 0.6);

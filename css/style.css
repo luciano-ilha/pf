@@ -1,3 +1,5 @@
+.about-container-bottom-box-title,
+.about-container-top,
 .portfolio-container-grid-item3-icons,
 .portfolio-container-grid-item2-icons,
 .portfolio-container-grid-item1-icons,
@@ -377,6 +379,59 @@
             border-radius: 5px;
             margin-right: 10px;
             box-shadow: inset 2px 3px 21px -1px rgba(0, 0, 0, 0.5); }
+
+.about {
+  padding: 100px 0; }
+  .about-container {
+    margin: 0 auto;
+    max-width: 77%; }
+    .about-container-top {
+      flex-direction: column;
+      margin-bottom: 100px; }
+      .about-container-top-title {
+        font-family: "Syne Mono", monospace;
+        font-size: 50px;
+        color: #30064e;
+        margin-bottom: 30px; }
+      .about-container-top-text {
+        font-family: "Cabin", sans-serif;
+        font-size: 22px;
+        max-width: 60%;
+        line-height: 30px;
+        margin-bottom: 30px; }
+      .about-container-top-button {
+        font-family: "Syne Mono", monospace;
+        font-weight: 700;
+        font-size: 23px;
+        width: fit-content;
+        padding: 15px;
+        background-color: #ffdc00;
+        color: #30064e;
+        border-radius: 8px; }
+    .about-container-line {
+      display: block;
+      border-bottom: 5px solid #30064e;
+      margin-bottom: 100px; }
+    .about-container-bottom {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr; }
+      .about-container-bottom-box-title {
+        margin-bottom: 40px; }
+        .about-container-bottom-box-title img {
+          width: 30px;
+          margin-right: 10px; }
+        .about-container-bottom-box-title h3 {
+          font-family: "Source Code Pro", monospace;
+          font-size: 30px; }
+      .about-container-bottom-box-list {
+        font-family: "Cabin", sans-serif;
+        font-size: 20px;
+        list-style-type: disc; }
+        .about-container-bottom-box-list-text {
+          position: relative;
+          left: 21px;
+          margin-bottom: 18px; }
 
 .whiteback {
   height: 100%;
