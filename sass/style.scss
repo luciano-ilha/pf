@@ -545,10 +545,10 @@
       textarea {
         margin: 30px 0;
         border-radius: 10px;
-        border: 2px solid $purple;
-        background-color: $white;
+        border: 2px solid $yellow;
+        background-color: $purple;
         font-family: $navfont;
-        color: $purple;
+        color: $white;
         font-size: 25px;
         padding: 5px 10px
       }
@@ -567,6 +567,24 @@
             100% { color: $purple; }
           }
         }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $purple;
+  height: 90px;
+  padding-top: 23px;
+  &-container {
+    margin: 0 auto;
+    max-width: 77%;
+    justify-content: center;
+    span {
+      margin-right: 28px;
+      img {
+        width: 40px;
+        filter: invert(78%) sepia(33%) saturate(1482%) hue-rotate(358deg) brightness(108%) contrast(106%);
       }
     }
   }
