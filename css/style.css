@@ -59,12 +59,12 @@
     .main-container-icons {
       flex-direction: column;
       justify-content: space-between; }
-      .main-container-icons span {
+      .main-container-icons a {
         padding: 10px;
         background-color: #30064e;
         margin-bottom: 15px;
         border-radius: 50%; }
-        .main-container-icons span:hover {
+        .main-container-icons a:hover {
           cursor: pointer;
           animation: bounce 1s linear; }
 
@@ -518,11 +518,24 @@
     margin: 0 auto;
     max-width: 77%;
     justify-content: center; }
-    .footer-container span {
+    .footer-container a {
       margin-right: 28px; }
-      .footer-container span img {
+      .footer-container a img {
         width: 40px;
         filter: invert(78%) sepia(33%) saturate(1482%) hue-rotate(358deg) brightness(108%) contrast(106%); }
+      .footer-container a:hover {
+        cursor: pointer;
+        animation: bounce 1s linear; }
+
+@keyframes bounce {
+  20%, 50%, 80%, to {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-11px); }
+  70% {
+    transform: translateY(-6px); }
+  90% {
+    transform: translateY(-3px); } }
 
 .whiteback {
   height: 100%;

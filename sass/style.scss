@@ -47,7 +47,7 @@
     &-icons {
       flex-direction: column;
       justify-content: space-between;
-      span {
+      a {
         padding: 10px;
         background-color: $purple;
         margin-bottom: 15px;
@@ -580,11 +580,29 @@
     margin: 0 auto;
     max-width: 77%;
     justify-content: center;
-    span {
+    a {
       margin-right: 28px;
       img {
         width: 40px;
         filter: invert(78%) sepia(33%) saturate(1482%) hue-rotate(358deg) brightness(108%) contrast(106%);
+      }
+      &:hover {
+        cursor: pointer;
+        animation: bounce 1s linear;
+      }
+      @keyframes bounce {
+        20%,50%,80%,to{
+          transform: translateY(0);
+        }
+        40%{
+          transform: translateY(-11px);
+        }
+        70%{
+          transform: translateY(-6px);
+        }
+        90%{
+          transform: translateY(-3px);
+        }
       }
     }
   }
