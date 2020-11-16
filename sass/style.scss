@@ -426,6 +426,10 @@
 }
 
 .about {
+  background-image: url("../assets/images/portfolio-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   padding: 100px 0;
   &-container {
     margin: 0 auto;
@@ -436,15 +440,20 @@
       &-title {
         font-family: $navfont;
         font-size: 50px;
-        color: $purple;
+        color: $yellow;
         margin-bottom: 30px;
       }
       &-text {
         font-family: $textfont;
-        font-size: 22px;
-        max-width: 60%;
-        line-height: 30px;
+        font-weight: 900;
+        color: $purple;
+        background-color: rgba(253,240,213, 0.9);
+        font-size: 25px;
+        max-width: 70%;
+        line-height: 34px;
         margin-bottom: 30px;
+        padding: 10px;
+        border-radius: 10px;
       }
       &-button {
         font-family: $navfont;
@@ -455,11 +464,19 @@
         background-color: $yellow;
         color: $purple;
         border-radius: 8px;
+        &:hover {
+          animation: color-change 1s infinite;
+          @keyframes color-change {
+            0% { color: $purple; }
+            50% { color: $yellow; }
+            100% { color: $purple; }
+          }
+        }
       }
     }
     &-line {
       display: block;
-      border-bottom: 5px solid $purple;
+      border-bottom: 5px solid $yellow;
       margin-bottom: 100px;
     }
     &-bottom {
@@ -470,18 +487,21 @@
         &-title {
           margin-bottom: 40px;
           img {
-            width: 30px;
+            width: 28px;
             margin-right: 10px;
+            filter: invert(78%) sepia(33%) saturate(1482%) hue-rotate(358deg) brightness(108%) contrast(106%);
           }
           h3 {
             font-family: $titlefont;
             font-size: 30px;
+            color: $yellow;
           }
         }
         &-list {
           font-family: $textfont;
           font-size: 20px;
           list-style-type: disc;
+          color: $yellow;
           &-text {
             position: relative;
             left: 21px;
