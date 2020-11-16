@@ -1,3 +1,4 @@
+.contact-container,
 .about-container-bottom-box-title,
 .about-container-top,
 .portfolio-container-grid-item3-icons,
@@ -454,6 +455,59 @@
           position: relative;
           left: 21px;
           margin-bottom: 18px; }
+
+.contact {
+  padding: 150px 0;
+  background-color: #fdf0d5; }
+  .contact-container {
+    margin: 0 auto;
+    max-width: 77%; }
+    .contact-container-title {
+      font-family: "Source Code Pro", monospace;
+      font-size: 45px;
+      color: #30064e;
+      max-width: 600px;
+      margin-right: 30px;
+      line-height: 50px; }
+    .contact-container-form {
+      font-family: "Syne Mono", monospace;
+      font-size: 30px;
+      font-weight: 900;
+      color: #30064e; }
+      .contact-container-form input {
+        border: 0;
+        border-bottom: 2px solid #30064e;
+        background-color: #fdf0d5;
+        font-family: "Syne Mono", monospace;
+        color: #30064e;
+        font-size: 25px;
+        padding: 5px 10px; }
+      .contact-container-form textarea {
+        margin: 30px 0;
+        border-radius: 10px;
+        border: 2px solid #30064e;
+        background-color: #fdf0d5;
+        font-family: "Syne Mono", monospace;
+        color: #30064e;
+        font-size: 25px;
+        padding: 5px 10px; }
+      .contact-container-form a {
+        font-size: 23px;
+        width: fit-content;
+        padding: 15px;
+        background-color: #30064e;
+        color: #ffdc00;
+        border-radius: 8px; }
+        .contact-container-form a:hover {
+          animation: color-change 0.4s infinite; }
+
+@keyframes color-change {
+  0% {
+    color: #30064e; }
+  50% {
+    color: #ffdc00; }
+  100% {
+    color: #30064e; } }
 
 .whiteback {
   height: 100%;
