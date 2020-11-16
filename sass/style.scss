@@ -519,6 +519,7 @@
   &-container {
     margin: 0 auto;
     max-width: 77%;
+    align-items: center;
     &-title {
       font-family: $titlefont;
       font-size: 45px;
@@ -532,7 +533,6 @@
       font-size: 30px;
       font-weight: 900;
       color: $purple;
-
       input {
         border: 0;
         border-bottom: 2px solid $purple;

@@ -462,7 +462,8 @@
   background-color: #fdf0d5; }
   .contact-container {
     margin: 0 auto;
-    max-width: 77%; }
+    max-width: 77%;
+    align-items: center; }
     .contact-container-title {
       font-family: "Source Code Pro", monospace;
       font-size: 45px;
