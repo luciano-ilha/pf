@@ -32,15 +32,13 @@
 }
 
 .main {
-  height: 680px;
   background-image: url("../assets/images/bg-pf.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   &-container {
-    position: relative;
-    top: 110px;
+    padding: 110px 0;
     align-items: center;
     width: 90%;
     margin: 0 auto;
@@ -77,30 +75,32 @@
       }
     }
     &-content {
-      position: relative;
-      left: 80px;
+      margin-left: 80px;
       color: $purple;
       font-family: $titlefont;
       font-size: 35px;
+      @media screen and (max-width: $break-large) {
+        margin-left: 60px;
+      }
       &-title {
         display: inline-block;
         font-size: 50px;
         line-height: 65px;
         text-shadow: 2.5px 2.5px $yellow;
         &:nth-child(3) {
-          position: relative;
-          left: 50px;
+          margin-left: 50px;
         }
       }
       &-title2 {
         font-family: $navfont;
         font-size: 60px;
-        position: relative;
-        left: 110px;
+        margin-left: 110px;
         margin-top: 40px;
         margin-bottom: 50px;
         text-shadow: 2.5px 2.5px $purple;
-
+        @media screen and (max-width: $break-large) {
+          margin-left: 80px;
+        }
       }
       &-body {
         font-family: $textfont;
@@ -114,17 +114,19 @@
         min-width: 900px;
         margin-top: 25px;
         line-height: 40px;
+        @media screen and (max-width: $break-large) {
+          min-width: unset;
+          width: 98%;
+        }
       }
     }
   }
 }
 
 .portfolio{
-  height: 1070px;
   background: $white;
   &-container {
-    position: relative;
-    top: 95px;
+    padding: 100px 0;
     margin: 0 auto;
     max-width: 77%;
     &-title {
@@ -236,8 +238,12 @@
     &-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 250px;
+      grid-template-rows: 280px;
       grid-gap: 15px;
+      @media screen and (max-width: 1504px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 280px 280px;
+      }
       &-item1 {
         flex-direction: column;
         background-image: url("../assets/images/tascreenshot01.png");
@@ -248,15 +254,17 @@
         align-items: center;
         &-shadow {
           position: absolute;
-          height: 250px;
-          width: 33%;
+          height: 280px;
+          width: 25.15%;
           background: rgb(0,0,0);
           background: linear-gradient(180deg, rgba(0,0,0,0.4023984593837535) 0%, rgba(0,0,0,0.39959733893557425) 100%);
           z-index: 1;
+          @media screen and (max-width: 1504px) {
+            width: 49.4%;
+          }
         }
         &-title {
-          position: relative;
-          top: 50px;
+          margin-top: 50px;
           font-family: $titlefont;
           font-size: 33px;
           color: $purple;
@@ -268,8 +276,7 @@
           padding: 3px 0;
         }
         &-text {
-          position: relative;
-          top: 70px;
+          margin-top: 30px;
           font-family: $textfont;
           font-size: 20px;
           font-weight: 900;
@@ -282,8 +289,7 @@
           line-height: 21px;
         }
         &-icons {
-          position: relative;
-          top: 90px;
+          margin-top: 25px;
           z-index: 2;
           span {
             font-family: $textfont;
@@ -309,15 +315,17 @@
         align-items: center;
         &-shadow {
           position: absolute;
-          height: 250px;
-          width: 33%;
+          height: 280px;
+          width: 25.15%;
           background: rgb(0,0,0);
           background: linear-gradient(180deg, rgba(0,0,0,0.4023984593837535) 0%, rgba(0,0,0,0.39959733893557425) 100%);
           z-index: 1;
+          @media screen and (max-width: 1504px) {
+            width: 49.4%;
+          }
         }
         &-title {
-          position: relative;
-          top: 50px;
+          margin-top: 50px;
           font-family: $titlefont;
           font-size: 33px;
           color: $purple;
@@ -329,8 +337,7 @@
           padding: 3px 0;
         }
         &-text {
-          position: relative;
-          top: 70px;
+          margin-top: 30px;
           font-family: $textfont;
           font-size: 20px;
           font-weight: 900;
@@ -343,8 +350,7 @@
           line-height: 21px;
         }
         &-icons {
-          position: relative;
-          top: 80px;
+          margin-top: 20px;
           z-index: 2;
           span {
             font-family: $textfont;
@@ -368,17 +374,24 @@
         background-repeat: no-repeat;
         box-shadow: 21px 21px 46px 0px rgba(0,0,0,0.75);
         align-items: center;
+        @media screen and (max-width: 1504px) {
+          grid-column-start: 1;
+          grid-column-end: -1;
+          margin-top: 14px;
+        }
         &-shadow {
           position: absolute;
-          height: 250px;
-          width: 33%;
+          height: 280px;
+          width: 25.15%;
           background: rgb(0,0,0);
           background: linear-gradient(180deg, rgba(0,0,0,0.4023984593837535) 0%, rgba(0,0,0,0.39959733893557425) 100%);
           z-index: 1;
+          @media screen and (max-width: 1504px) {
+            width: 100%;
+          }
         }
         &-title {
-          position: relative;
-          top: 40px;
+          margin-top: 40px;
           font-family: $titlefont;
           font-size: 31px;
           color: $purple;
@@ -390,8 +403,7 @@
           padding: 3px 0;
         }
         &-text {
-          position: relative;
-          top: 50px;
+          margin-top: 15px;
           font-family: $textfont;
           font-size: 19px;
           font-weight: 900;
@@ -402,10 +414,13 @@
           padding: 5px;
           letter-spacing: 2px;
           line-height: 24px;
+          @media screen and (max-width: 1504px) {
+            text-align: center;
+            margin-top: 20px;
+          }
         }
         &-icons {
-          position: relative;
-          top: 62px;
+          margin-top: 17px;
           z-index: 2;
           span {
             font-family: $textfont;
@@ -441,7 +456,7 @@
         font-family: $navfont;
         font-size: 50px;
         color: $yellow;
-        margin-bottom: 30px;
+        margin-bottom: 55px;
       }
       &-text {
         font-family: $textfont;
@@ -449,9 +464,8 @@
         color: $purple;
         background-color: rgba(253,240,213, 0.9);
         font-size: 25px;
-        max-width: 70%;
         line-height: 34px;
-        margin-bottom: 30px;
+        margin-bottom: 55px;
         padding: 10px;
         border-radius: 10px;
       }
@@ -493,15 +507,24 @@
           }
           h3 {
             font-family: $titlefont;
-            font-size: 30px;
+            font-size: 35px;
             color: $yellow;
+            letter-spacing: 2px;
+            @media screen and (max-width: 1512px) {
+              font-size: 29px;
+              letter-spacing: 0;
+            }
           }
         }
         &-list {
           font-family: $textfont;
-          font-size: 20px;
+          font-size: 25px;
           list-style-type: disc;
           color: $yellow;
+          letter-spacing: 1.5px;
+          @media screen and (max-width: 1512px) {
+            font-size: 23px;
+          }
           &-text {
             position: relative;
             left: 21px;
