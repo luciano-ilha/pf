@@ -175,8 +175,8 @@
             line-height: 70px; } }
         @media screen and (max-width: 425px) {
           .main-container-content-title2 {
-            font-size: 55px;
-            line-height: 60px; } }
+            font-size: 50px;
+            line-height: 57px; } }
       .main-container-content-body {
         font-family: "Cabin", sans-serif;
         font-size: 28px;
@@ -195,8 +195,8 @@
             width: 98%; } }
         @media screen and (max-width: 425px) {
           .main-container-content-body {
-            font-size: 25px;
-            line-height: 35px; } }
+            font-size: 22px;
+            line-height: 33px; } }
 
 .portfolio {
   background: #fdf0d5; }
@@ -208,43 +208,72 @@
       justify-content: space-around;
       margin-bottom: 95px; }
       .portfolio-container-title-text {
-        width: 355px;
+        width: 26%;
         font-family: "Syne Mono", monospace;
-        font-size: 33px;
+        font-size: 35px;
         font-weight: 900;
         color: #30064e;
         margin-right: 10px; }
+        @media screen and (max-width: 1504px) {
+          .portfolio-container-title-text {
+            width: 32%; } }
+        @media screen and (max-width: 1200px) {
+          .portfolio-container-title-text {
+            text-align: center;
+            line-height: 40px; } }
       .portfolio-container-title-line {
         align-self: center;
-        width: 90%;
+        width: 74%;
         border-bottom: 5px solid #30064e; }
+        @media screen and (max-width: 1504px) {
+          .portfolio-container-title-line {
+            width: 68%; } }
     .portfolio-container-top {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 1fr;
       grid-gap: 30px;
-      margin-bottom: 45px; }
+      margin-bottom: 80px; }
+      @media screen and (max-width: 1200px) {
+        .portfolio-container-top {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 100px; } }
       .portfolio-container-top-image {
         width: 100%;
         background-image: url("../assets/images/gameshark-scrshot.png");
         background-position: center;
         background-size: cover;
-        background-attachment: scroll;
-        box-shadow: -21px 21px 46px 0px rgba(0, 0, 0, 0.75); }
+        background-repeat: no-repeat;
+        box-shadow: -21px 21px 46px 0px rgba(0, 0, 0, 0.6); }
+        @media screen and (max-width: 1200px) {
+          .portfolio-container-top-image {
+            height: 400px;
+            box-shadow: 0px 21px 46px 0px rgba(0, 0, 0, 0.6);
+            margin-bottom: 40px; } }
       .portfolio-container-top-right {
         justify-content: space-evenly;
         flex-direction: column; }
         .portfolio-container-top-right-title {
           font-family: "Source Code Pro", monospace;
-          font-size: 30px;
+          font-size: 35px;
           color: #30064e;
-          margin-bottom: 30px; }
+          margin-bottom: 30px;
+          text-align: center; }
+          @media screen and (max-width: 1200px) {
+            .portfolio-container-top-right-title {
+              font-size: 42px;
+              margin-bottom: 40px; } }
         .portfolio-container-top-right-text {
           font-family: "Cabin", sans-serif;
-          font-size: 20px;
+          font-size: 25px;
           color: #30064e;
-          line-height: 28px;
+          line-height: 33px;
           margin-bottom: 30px; }
+          @media screen and (max-width: 1200px) {
+            .portfolio-container-top-right-text {
+              font-size: 27px;
+              margin-bottom: 50px; } }
         .portfolio-container-top-right-icons {
           align-items: center;
           margin-bottom: 30px; }
@@ -265,7 +294,7 @@
             margin-right: 13px; }
         .portfolio-container-top-right-buttons a {
           font-family: "Syne Mono", monospace;
-          font-size: 20px;
+          font-size: 25px;
           width: fit-content;
           background-color: #30064e;
           color: #fdf0d5;
@@ -295,30 +324,43 @@
     .portfolio-container-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 280px;
+      grid-template-rows: 300px;
       grid-gap: 15px; }
       @media screen and (max-width: 1504px) {
         .portfolio-container-grid {
           grid-template-columns: 1fr 1fr;
-          grid-template-rows: 280px 280px; } }
+          grid-template-rows: 300px 400px; } }
+      @media screen and (max-width: 1144px) {
+        .portfolio-container-grid {
+          display: flex;
+          flex-direction: column; } }
       .portfolio-container-grid-item1 {
         flex-direction: column;
         background-image: url("../assets/images/tascreenshot01.png");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        box-shadow: -21px 21px 46px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: -21px 21px 46px 0px rgba(0, 0, 0, 0.6);
         align-items: center; }
+        @media screen and (max-width: 1144px) {
+          .portfolio-container-grid-item1 {
+            height: 450px;
+            margin-bottom: 50px; } }
         .portfolio-container-grid-item1-shadow {
           position: absolute;
-          height: 280px;
+          height: 300px;
           width: 25.15%;
           background: black;
           background: linear-gradient(180deg, rgba(0, 0, 0, 0.402398) 0%, rgba(0, 0, 0, 0.399597) 100%);
           z-index: 1; }
           @media screen and (max-width: 1504px) {
             .portfolio-container-grid-item1-shadow {
-              width: 49.4%; } }
+              width: 38.06%; } }
+          @media screen and (max-width: 1144px) {
+            .portfolio-container-grid-item1-shadow {
+              width: 77%;
+              height: 450px;
+              box-shadow: 0px 21px 46px 0px rgba(0, 0, 0, 0.6); } }
         .portfolio-container-grid-item1-title {
           margin-top: 50px;
           font-family: "Source Code Pro", monospace;
@@ -330,6 +372,12 @@
           z-index: 2;
           box-shadow: inset 2px 3px 21px -1px rgba(0, 0, 0, 0.5);
           padding: 3px 0; }
+          @media screen and (max-width: 1504px) {
+            .portfolio-container-grid-item1-title {
+              font-size: 38px; } }
+          @media screen and (max-width: 1144px) {
+            .portfolio-container-grid-item1-title {
+              font-size: 40px; } }
         .portfolio-container-grid-item1-text {
           margin-top: 30px;
           font-family: "Cabin", sans-serif;
@@ -342,9 +390,25 @@
           padding: 5px;
           letter-spacing: 2px;
           line-height: 21px; }
+          @media screen and (max-width: 1504px) {
+            .portfolio-container-grid-item1-text {
+              font-size: 26px;
+              line-height: 33px; } }
+          @media screen and (max-width: 1144px) {
+            .portfolio-container-grid-item1-text {
+              font-size: 30px;
+              text-align: center;
+              margin-top: 70px;
+              line-height: 40px; } }
         .portfolio-container-grid-item1-icons {
           margin-top: 25px;
           z-index: 2; }
+          @media screen and (max-width: 1504px) {
+            .portfolio-container-grid-item1-icons {
+              margin-top: 10px; } }
+          @media screen and (max-width: 1144px) {
+            .portfolio-container-grid-item1-icons {
+              margin-top: 50px; } }
           .portfolio-container-grid-item1-icons span {
             font-family: "Cabin", sans-serif;
             font-size: 19px;
@@ -356,24 +420,42 @@
             border-radius: 5px;
             margin-right: 10px;
             box-shadow: inset 2px 3px 21px -1px rgba(0, 0, 0, 0.5); }
+            @media screen and (max-width: 1504px) {
+              .portfolio-container-grid-item1-icons span {
+                font-size: 22px; } }
+            @media screen and (max-width: 1144px) {
+              .portfolio-container-grid-item1-icons span {
+                font-size: 28px; } }
       .portfolio-container-grid-item2 {
         flex-direction: column;
         background-image: url("../assets/images/nwscreenshot.png");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        box-shadow: 0px 21px 46px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 21px 46px 0px rgba(0, 0, 0, 0.6);
         align-items: center; }
+        @media screen and (max-width: 1200px) {
+          .portfolio-container-grid-item2 {
+            box-shadow: 21px 21px 46px 0px rgba(0, 0, 0, 0.6); } }
+        @media screen and (max-width: 1144px) {
+          .portfolio-container-grid-item2 {
+            height: 450px;
+            margin-bottom: 50px; } }
         .portfolio-container-grid-item2-shadow {
           position: absolute;
-          height: 280px;
+          height: 300px;
           width: 25.15%;
           background: black;
           background: linear-gradient(180deg, rgba(0, 0, 0, 0.402398) 0%, rgba(0, 0, 0, 0.399597) 100%);
           z-index: 1; }
           @media screen and (max-width: 1504px) {
             .portfolio-container-grid-item2-shadow {
-              width: 49.4%; } }
+              width: 38.06%; } }
+          @media screen and (max-width: 1144px) {
+            .portfolio-container-grid-item2-shadow {
+              width: 77%;
+              height: 450px;
+              box-shadow: 0px 21px 46px 0px rgba(0, 0, 0, 0.6); } }
         .portfolio-container-grid-item2-title {
           margin-top: 50px;
           font-family: "Source Code Pro", monospace;
@@ -385,6 +467,12 @@
           z-index: 2;
           box-shadow: inset 2px 3px 21px -1px rgba(0, 0, 0, 0.5);
           padding: 3px 0; }
+          @media screen and (max-width: 1504px) {
+            .portfolio-container-grid-item2-title {
+              font-size: 38px; } }
+          @media screen and (max-width: 1144px) {
+            .portfolio-container-grid-item2-title {
+              font-size: 41px; } }
         .portfolio-container-grid-item2-text {
           margin-top: 30px;
           font-family: "Cabin", sans-serif;
@@ -397,9 +485,25 @@
           padding: 5px;
           letter-spacing: 2px;
           line-height: 21px; }
+          @media screen and (max-width: 1504px) {
+            .portfolio-container-grid-item2-text {
+              font-size: 23px;
+              line-height: 32px; } }
+          @media screen and (max-width: 1144px) {
+            .portfolio-container-grid-item2-text {
+              font-size: 30px;
+              text-align: center;
+              margin-top: 70px;
+              line-height: 40px; } }
         .portfolio-container-grid-item2-icons {
           margin-top: 20px;
           z-index: 2; }
+          @media screen and (max-width: 1504px) {
+            .portfolio-container-grid-item2-icons {
+              margin-top: 10px; } }
+          @media screen and (max-width: 1144px) {
+            .portfolio-container-grid-item2-icons {
+              margin-top: 50px; } }
           .portfolio-container-grid-item2-icons span {
             font-family: "Cabin", sans-serif;
             font-size: 19px;
@@ -411,29 +515,46 @@
             border-radius: 5px;
             margin-right: 10px;
             box-shadow: inset 2px 3px 21px -1px rgba(0, 0, 0, 0.5); }
+            @media screen and (max-width: 1504px) {
+              .portfolio-container-grid-item2-icons span {
+                font-size: 22px; } }
+            @media screen and (max-width: 1144px) {
+              .portfolio-container-grid-item2-icons span {
+                font-size: 28px; } }
       .portfolio-container-grid-item3 {
         flex-direction: column;
         background-image: url("../assets/images/rpsscreenshot.png");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        box-shadow: 21px 21px 46px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 21px 21px 46px 0px rgba(0, 0, 0, 0.6);
         align-items: center; }
         @media screen and (max-width: 1504px) {
           .portfolio-container-grid-item3 {
             grid-column-start: 1;
             grid-column-end: -1;
-            margin-top: 14px; } }
+            margin-top: 20px;
+            box-shadow: 0px 21px 46px 0px rgba(0, 0, 0, 0.6); } }
+        @media screen and (max-width: 1144px) {
+          .portfolio-container-grid-item3 {
+            height: 450px;
+            margin-top: 0; } }
         .portfolio-container-grid-item3-shadow {
           position: absolute;
-          height: 280px;
+          height: 300px;
           width: 25.15%;
           background: black;
           background: linear-gradient(180deg, rgba(0, 0, 0, 0.402398) 0%, rgba(0, 0, 0, 0.399597) 100%);
           z-index: 1; }
           @media screen and (max-width: 1504px) {
             .portfolio-container-grid-item3-shadow {
-              width: 100%; } }
+              width: 77%;
+              height: 380px; } }
+          @media screen and (max-width: 1144px) {
+            .portfolio-container-grid-item3-shadow {
+              width: 77%;
+              height: 450px;
+              box-shadow: 0px 21px 46px 0px rgba(0, 0, 0, 0.6); } }
         .portfolio-container-grid-item3-title {
           margin-top: 40px;
           font-family: "Source Code Pro", monospace;
@@ -445,6 +566,9 @@
           z-index: 2;
           box-shadow: inset 2px 3px 21px -1px rgba(0, 0, 0, 0.5);
           padding: 3px 0; }
+          @media screen and (max-width: 1504px) {
+            .portfolio-container-grid-item3-title {
+              font-size: 40px; } }
         .portfolio-container-grid-item3-text {
           margin-top: 15px;
           font-family: "Cabin", sans-serif;
@@ -459,11 +583,19 @@
           line-height: 24px; }
           @media screen and (max-width: 1504px) {
             .portfolio-container-grid-item3-text {
+              font-size: 30px;
               text-align: center;
-              margin-top: 20px; } }
+              margin-top: 70px;
+              line-height: 40px; } }
         .portfolio-container-grid-item3-icons {
           margin-top: 17px;
           z-index: 2; }
+          @media screen and (max-width: 1504px) {
+            .portfolio-container-grid-item3-icons {
+              margin-top: 25px; } }
+          @media screen and (max-width: 1144px) {
+            .portfolio-container-grid-item3-icons {
+              margin-top: 50px; } }
           .portfolio-container-grid-item3-icons span {
             font-family: "Cabin", sans-serif;
             font-size: 19px;
@@ -475,6 +607,12 @@
             border-radius: 5px;
             margin-right: 10px;
             box-shadow: inset 2px 3px 21px -1px rgba(0, 0, 0, 0.5); }
+            @media screen and (max-width: 1504px) {
+              .portfolio-container-grid-item3-icons span {
+                font-size: 25px; } }
+            @media screen and (max-width: 1144px) {
+              .portfolio-container-grid-item3-icons span {
+                font-size: 28px; } }
 
 .about {
   background-image: url("../assets/images/portfolio-bg.png");
