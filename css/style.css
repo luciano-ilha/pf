@@ -204,9 +204,16 @@
     padding: 100px 0;
     margin: 0 auto;
     max-width: 77%; }
+    @media screen and (max-width: 425px) {
+      .portfolio-container {
+        padding: 80px 0; } }
     .portfolio-container-title {
       justify-content: space-around;
       margin-bottom: 95px; }
+      @media screen and (max-width: 425px) {
+        .portfolio-container-title {
+          flex-direction: column;
+          margin-bottom: 50px; } }
       .portfolio-container-title-text {
         width: 26%;
         font-family: "Syne Mono", monospace;
@@ -221,6 +228,12 @@
           .portfolio-container-title-text {
             text-align: center;
             line-height: 40px; } }
+        @media screen and (max-width: 425px) {
+          .portfolio-container-title-text {
+            font-size: 29px;
+            width: 100%;
+            line-height: unset;
+            margin-bottom: 30px; } }
       .portfolio-container-title-line {
         align-self: center;
         width: 74%;
@@ -228,6 +241,9 @@
         @media screen and (max-width: 1504px) {
           .portfolio-container-title-line {
             width: 68%; } }
+        @media screen and (max-width: 425px) {
+          .portfolio-container-title-line {
+            width: 83%; } }
     .portfolio-container-top {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -264,6 +280,10 @@
             .portfolio-container-top-right-title {
               font-size: 42px;
               margin-bottom: 40px; } }
+          @media screen and (max-width: 425px) {
+            .portfolio-container-top-right-title {
+              font-size: 35px;
+              line-height: 41px; } }
         .portfolio-container-top-right-text {
           font-family: "Cabin", sans-serif;
           font-size: 25px;
@@ -274,6 +294,10 @@
             .portfolio-container-top-right-text {
               font-size: 27px;
               margin-bottom: 50px; } }
+          @media screen and (max-width: 425px) {
+            .portfolio-container-top-right-text {
+              text-align: center;
+              font-size: 24px; } }
         .portfolio-container-top-right-icons {
           align-items: center;
           margin-bottom: 30px; }
@@ -305,11 +329,18 @@
             margin-right: 20px; }
           .portfolio-container-top-right-buttons a:nth-child(2) {
             padding: 13px 23px 18px; }
+          @media screen and (max-width: 425px) {
+            .portfolio-container-top-right-buttons a {
+              display: flex;
+              justify-content: center; } }
           .portfolio-container-top-right-buttons a img {
             position: relative;
             top: 3px;
             width: 23px;
             filter: invert(88%) sepia(3%) saturate(2690%) hue-rotate(332deg) brightness(112%) contrast(99%); }
+            @media screen and (max-width: 425px) {
+              .portfolio-container-top-right-buttons a img {
+                position: unset; } }
           .portfolio-container-top-right-buttons a:hover {
             cursor: pointer;
             animation: color-change 0.4s infinite; }
@@ -378,6 +409,9 @@
           @media screen and (max-width: 1144px) {
             .portfolio-container-grid-item1-title {
               font-size: 40px; } }
+          @media screen and (max-width: 425px) {
+            .portfolio-container-grid-item1-title {
+              font-size: 32px; } }
         .portfolio-container-grid-item1-text {
           margin-top: 30px;
           font-family: "Cabin", sans-serif;
@@ -400,6 +434,11 @@
               text-align: center;
               margin-top: 70px;
               line-height: 40px; } }
+          @media screen and (max-width: 425px) {
+            .portfolio-container-grid-item1-text {
+              font-size: 23px;
+              margin-top: 25px;
+              line-height: 32px; } }
         .portfolio-container-grid-item1-icons {
           margin-top: 25px;
           z-index: 2; }
@@ -426,6 +465,9 @@
             @media screen and (max-width: 1144px) {
               .portfolio-container-grid-item1-icons span {
                 font-size: 28px; } }
+            @media screen and (max-width: 425px) {
+              .portfolio-container-grid-item1-icons span {
+                font-size: 21px; } }
       .portfolio-container-grid-item2 {
         flex-direction: column;
         background-image: url("../assets/images/nwscreenshot.png");
@@ -473,6 +515,9 @@
           @media screen and (max-width: 1144px) {
             .portfolio-container-grid-item2-title {
               font-size: 41px; } }
+          @media screen and (max-width: 425px) {
+            .portfolio-container-grid-item2-title {
+              font-size: 32px; } }
         .portfolio-container-grid-item2-text {
           margin-top: 30px;
           font-family: "Cabin", sans-serif;
@@ -495,6 +540,11 @@
               text-align: center;
               margin-top: 70px;
               line-height: 40px; } }
+          @media screen and (max-width: 425px) {
+            .portfolio-container-grid-item2-text {
+              font-size: 23px;
+              margin-top: 25px;
+              line-height: 32px; } }
         .portfolio-container-grid-item2-icons {
           margin-top: 20px;
           z-index: 2; }
@@ -521,6 +571,10 @@
             @media screen and (max-width: 1144px) {
               .portfolio-container-grid-item2-icons span {
                 font-size: 28px; } }
+            @media screen and (max-width: 425px) {
+              .portfolio-container-grid-item2-icons span {
+                font-size: 18px;
+                margin-right: 6px; } }
       .portfolio-container-grid-item3 {
         flex-direction: column;
         background-image: url("../assets/images/rpsscreenshot.png");
@@ -569,6 +623,9 @@
           @media screen and (max-width: 1504px) {
             .portfolio-container-grid-item3-title {
               font-size: 40px; } }
+          @media screen and (max-width: 425px) {
+            .portfolio-container-grid-item3-title {
+              font-size: 32px; } }
         .portfolio-container-grid-item3-text {
           margin-top: 15px;
           font-family: "Cabin", sans-serif;
@@ -587,6 +644,11 @@
               text-align: center;
               margin-top: 70px;
               line-height: 40px; } }
+          @media screen and (max-width: 425px) {
+            .portfolio-container-grid-item3-text {
+              font-size: 23px;
+              margin-top: 25px;
+              line-height: 32px; } }
         .portfolio-container-grid-item3-icons {
           margin-top: 17px;
           z-index: 2; }
@@ -612,7 +674,7 @@
                 font-size: 25px; } }
             @media screen and (max-width: 1144px) {
               .portfolio-container-grid-item3-icons span {
-                font-size: 28px; } }
+                font-size: 21px; } }
 
 .about {
   background-image: url("../assets/images/portfolio-bg.png");
@@ -641,6 +703,10 @@
         margin-bottom: 55px;
         padding: 10px;
         border-radius: 10px; }
+        @media screen and (max-width: 1144px) {
+          .about-container-top-text {
+            text-align: center;
+            line-height: 35px; } }
       .about-container-top-button {
         font-family: "Syne Mono", monospace;
         font-weight: 700;
@@ -668,6 +734,16 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 1fr; }
+      @media screen and (max-width: 1144px) {
+        .about-container-bottom {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          grid-gap: 50px; } }
+      @media screen and (max-width: 1144px) {
+        .about-container-bottom-box {
+          display: flex;
+          flex-direction: column;
+          align-items: center; } }
       .about-container-bottom-box-title {
         margin-bottom: 40px; }
         .about-container-bottom-box-title img {

@@ -216,9 +216,16 @@
     padding: 100px 0;
     margin: 0 auto;
     max-width: 77%;
+    @media screen and (max-width: $break-small) {
+      padding: 80px 0;
+    }
     &-title {
       justify-content: space-around;
       margin-bottom: 95px;
+      @media screen and (max-width: $break-small) {
+        flex-direction: column;
+        margin-bottom: 50px;
+      }
       &-text {
         width: 26%;
         font-family: $navfont;
@@ -233,6 +240,12 @@
           text-align: center;
           line-height: 40px;
         }
+        @media screen and (max-width: $break-small) {
+          font-size: 29px;
+          width: 100%;
+          line-height: unset;
+          margin-bottom: 30px;
+        }
       }
       &-line {
         align-self: center;
@@ -240,6 +253,9 @@
         border-bottom: 5px solid $purple;
         @media screen and (max-width: 1504px) {
           width: 68%;
+        }
+        @media screen and (max-width: $break-small) {
+          width: 83%;
         }
       }
     }
@@ -280,6 +296,10 @@
             font-size: 42px;
             margin-bottom: 40px;
           }
+          @media screen and (max-width: $break-small) {
+            font-size: 35px;
+            line-height: 41px;
+          }
         }
         &-text {
           font-family: $textfont;
@@ -290,6 +310,10 @@
           @media screen and (max-width: $break-large) {
             font-size: 27px;
             margin-bottom: 50px;
+          }
+          @media screen and (max-width: $break-small) {
+            text-align: center;
+            font-size: 24px;
           }
         }
         &-icons {
@@ -332,11 +356,18 @@
             &:nth-child(2) {
               padding: 13px 23px 18px;
             }
+            @media screen and (max-width: $break-small) {
+              display: flex;
+              justify-content: center;
+            }
             img {
               position: relative;
               top: 3px;
               width: 23px;
               filter: invert(88%) sepia(3%) saturate(2690%) hue-rotate(332deg) brightness(112%) contrast(99%);
+              @media screen and (max-width: $break-small) {
+                position: unset;
+              }
             }
             &:hover {
               cursor: pointer;
@@ -409,6 +440,9 @@
           @media screen and (max-width: 1144px) {
             font-size: 40px;
           }
+          @media screen and (max-width: $break-small) {
+            font-size: 32px;
+          }
         }
         &-text {
           margin-top: 30px;
@@ -431,6 +465,11 @@
             text-align: center;
             margin-top: 70px;
             line-height: 40px;
+          }
+          @media screen and (max-width: $break-small) {
+            font-size: 23px;
+            margin-top: 25px;
+            line-height: 32px;
           }
         }
         &-icons {
@@ -458,6 +497,9 @@
             }
             @media screen and (max-width: 1144px) {
               font-size: 28px;
+            }
+            @media screen and (max-width: $break-small) {
+              font-size: 21px;
             }
           }
         }
@@ -510,6 +552,9 @@
           @media screen and (max-width: 1144px) {
             font-size: 41px;
           }
+          @media screen and (max-width: $break-small) {
+            font-size: 32px;
+          }
         }
         &-text {
           margin-top: 30px;
@@ -532,6 +577,11 @@
             text-align: center;
             margin-top: 70px;
             line-height: 40px;
+          }
+          @media screen and (max-width: $break-small) {
+            font-size: 23px;
+            margin-top: 25px;
+            line-height: 32px;
           }
         }
         &-icons {
@@ -559,6 +609,10 @@
             }
             @media screen and (max-width: 1144px) {
               font-size: 28px;
+            }
+            @media screen and (max-width: $break-small) {
+              font-size: 18px;
+              margin-right: 6px;
             }
           }
         }
@@ -612,6 +666,9 @@
           @media screen and (max-width: 1504px) {
             font-size: 40px;
           }
+          @media screen and (max-width: $break-small) {
+            font-size: 32px;
+          }
         }
         &-text {
           margin-top: 15px;
@@ -630,6 +687,11 @@
             text-align: center;
             margin-top: 70px;
             line-height: 40px;
+          }
+          @media screen and (max-width: $break-small) {
+            font-size: 23px;
+            margin-top: 25px;
+            line-height: 32px;
           }
         }
         &-icons {
@@ -656,7 +718,7 @@
               font-size: 25px;
             }
             @media screen and (max-width: 1144px) {
-              font-size: 28px;
+              font-size: 21px;
             }
           }
         }
@@ -693,6 +755,10 @@
         margin-bottom: 55px;
         padding: 10px;
         border-radius: 10px;
+        @media screen and (max-width: 1144px) {
+          text-align: center;
+          line-height: 35px;
+        }
       }
       &-button {
         font-family: $navfont;
@@ -722,7 +788,17 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 1fr;
+      @media screen and (max-width: 1144px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 50px;
+      }
       &-box {
+        @media screen and (max-width: 1144px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
         &-title {
           margin-bottom: 40px;
           img {
