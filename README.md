@@ -2,7 +2,7 @@
 
 My portfolio website.
 
-![Screenshot](app/assets/images/pf-screenshot.png)
+![Screenshot](pf/assets/images/pf-screenshot.png)
 
 ## Built With
 
