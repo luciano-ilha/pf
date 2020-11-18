@@ -703,7 +703,7 @@
         margin-bottom: 55px;
         padding: 10px;
         border-radius: 10px; }
-        @media screen and (max-width: 1144px) {
+        @media screen and (max-width: 768px) {
           .about-container-top-text {
             text-align: center;
             line-height: 35px; } }
@@ -734,16 +734,24 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 1fr; }
-      @media screen and (max-width: 1144px) {
+      @media screen and (max-width: 1200px) {
         .about-container-bottom {
           grid-template-columns: repeat(2, 1fr);
           grid-template-rows: repeat(2, 1fr);
           grid-gap: 50px; } }
-      @media screen and (max-width: 1144px) {
+      @media screen and (max-width: 425px) {
+        .about-container-bottom {
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(4, 1fr);
+          grid-gap: 50px; } }
+      @media screen and (max-width: 1200px) {
         .about-container-bottom-box {
           display: flex;
           flex-direction: column;
           align-items: center; } }
+      @media screen and (max-width: 425px) {
+        .about-container-bottom-box {
+          align-items: unset; } }
       .about-container-bottom-box-title {
         margin-bottom: 40px; }
         .about-container-bottom-box-title img {
@@ -759,6 +767,12 @@
             .about-container-bottom-box-title h3 {
               font-size: 29px;
               letter-spacing: 0; } }
+          @media screen and (max-width: 660px) {
+            .about-container-bottom-box-title h3 {
+              font-size: 27px; } }
+          @media screen and (max-width: 425px) {
+            .about-container-bottom-box-title h3 {
+              font-size: 30px; } }
       .about-container-bottom-box-list {
         font-family: "Cabin", sans-serif;
         font-size: 25px;
@@ -768,6 +782,12 @@
         @media screen and (max-width: 1512px) {
           .about-container-bottom-box-list {
             font-size: 23px; } }
+        @media screen and (max-width: 660px) {
+          .about-container-bottom-box-list {
+            font-size: 20px; } }
+        @media screen and (max-width: 425px) {
+          .about-container-bottom-box-list {
+            font-size: 27px; } }
         .about-container-bottom-box-list-text {
           position: relative;
           left: 21px;
