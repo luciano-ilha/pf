@@ -12,7 +12,7 @@ My portfolio website.
 
 ## Live Demo
 
-[Luciano's Portfolio](https://rawcdn.githack.com/luciano-ilha/pf/9fe699c74284f9abcc8503b9c94f2313fbb9761b/index.html)
+[See here](https://rawcdn.githack.com/luciano-ilha/pf/9fe699c74284f9abcc8503b9c94f2313fbb9761b/index.html)
 
 
 ## ✒️ Author <a name = "author"></a>
