@@ -14,15 +14,13 @@ My portfolio website.
 
 [See here](https://quirky-golick-1a9aba.netlify.app/)
 
-
 ## ✒️ Author <a name = "author"></a>
 
 👤 **Luciano Ilha Carbonel**
 
 - Github: [@Luciano Ilha](https://github.com/luciano-ilha)
-- Twitter: [@CarbonellIlha](https://twitter.com/CarbonellIlha )
+- Twitter: [@CarbonellIlha](https://twitter.com/CarbonellIlha)
 - Linkedin: [@Luciano Carbonell](https://www.linkedin.com/in/luciano-carbonell/)
-
 
 ## Show your support :muscle:
 
