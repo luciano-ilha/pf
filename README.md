@@ -1,6 +1,6 @@
 # My Personal Portfolio
 
-My portfolio website.
+My portfolio website, where you can see my main projects and find my social links and contact info.
 
 ![Screenshot](assets/images/pf-screenshot.png)
 
