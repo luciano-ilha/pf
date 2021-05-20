@@ -1,4 +1,4 @@
-@import 'config';
+@import "config";
 
 .menu {
   display: none;
@@ -9,7 +9,8 @@
   }
   img {
     width: 55px;
-    filter: invert(13%) sepia(10%) saturate(7280%) hue-rotate(246deg) brightness(109%) contrast(122%);
+    filter: invert(13%) sepia(10%) saturate(7280%) hue-rotate(246deg)
+      brightness(109%) contrast(122%);
   }
 }
 .nav {
@@ -29,9 +30,15 @@
       &:hover {
         animation: color-change 0.4s infinite;
         @keyframes color-change {
-          0% { color: $white; }
-          50% { color: $yellow; }
-          100% { color: $white; }
+          0% {
+            color: $white;
+          }
+          50% {
+            color: $yellow;
+          }
+          100% {
+            color: $white;
+          }
         }
       }
     }
@@ -42,7 +49,8 @@
   img {
     margin-left: 10px;
     width: 30px;
-    filter: invert(70%) sepia(100%) saturate(457%) hue-rotate(360deg) brightness(105%) contrast(105%);
+    filter: invert(70%) sepia(100%) saturate(457%) hue-rotate(360deg)
+      brightness(105%) contrast(105%);
   }
 }
 
@@ -80,23 +88,27 @@
           animation: bounce 1s linear;
         }
         @keyframes bounce {
-          20%,50%,80%,to{
+          20%,
+          50%,
+          80%,
+          to {
             transform: translateY(0);
           }
-          40%{
+          40% {
             transform: translateY(-11px);
           }
-          70%{
+          70% {
             transform: translateY(-6px);
           }
-          90%{
+          90% {
             transform: translateY(-3px);
           }
         }
       }
       img {
         width: 30px;
-        filter: invert(70%) sepia(100%) saturate(457%) hue-rotate(360deg) brightness(105%) contrast(105%);
+        filter: invert(70%) sepia(100%) saturate(457%) hue-rotate(360deg)
+          brightness(105%) contrast(105%);
       }
     }
     &-icons2 {
@@ -118,23 +130,27 @@
           animation: bounce 1s linear;
         }
         @keyframes bounce {
-          20%,50%,80%,to{
+          20%,
+          50%,
+          80%,
+          to {
             transform: translateY(0);
           }
-          40%{
+          40% {
             transform: translateY(-11px);
           }
-          70%{
+          70% {
             transform: translateY(-6px);
           }
-          90%{
+          90% {
             transform: translateY(-3px);
           }
         }
       }
       img {
         width: 30px;
-        filter: invert(70%) sepia(100%) saturate(457%) hue-rotate(360deg) brightness(105%) contrast(105%);
+        filter: invert(70%) sepia(100%) saturate(457%) hue-rotate(360deg)
+          brightness(105%) contrast(105%);
       }
     }
     &-content {
@@ -166,12 +182,12 @@
         }
       }
       &-title2 {
-        font-family: $navfont;
+        font-family: sans-serif;
         font-size: 60px;
         margin-left: 110px;
         margin-top: 40px;
         margin-bottom: 50px;
-        text-shadow: 2.5px 2.5px $purple;
+        text-shadow: 2px 2px $purple;
         @media screen and (max-width: $break-large) {
           margin-left: 60px;
         }
@@ -210,7 +226,7 @@
   }
 }
 
-.portfolio{
+.portfolio {
   background: $white;
   &-container {
     padding: 100px 0;
@@ -261,7 +277,7 @@
     }
     &-top {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);;
+      grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 1fr;
       grid-gap: 30px;
       margin-bottom: 80px;
@@ -276,10 +292,10 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        box-shadow: -21px 21px 46px 0px rgba(0,0,0,0.60);
+        box-shadow: -21px 21px 46px 0px rgba(0, 0, 0, 0.6);
         @media screen and (max-width: $break-large) {
           height: 400px;
-          box-shadow: 0px 21px 46px 0px rgba(0,0,0,0.60);
+          box-shadow: 0px 21px 46px 0px rgba(0, 0, 0, 0.6);
           margin-bottom: 40px;
         }
       }
@@ -364,7 +380,8 @@
               position: relative;
               top: 3px;
               width: 23px;
-              filter: invert(88%) sepia(3%) saturate(2690%) hue-rotate(332deg) brightness(112%) contrast(99%);
+              filter: invert(88%) sepia(3%) saturate(2690%) hue-rotate(332deg)
+                brightness(112%) contrast(99%);
               @media screen and (max-width: $break-small) {
                 position: unset;
               }
@@ -373,9 +390,15 @@
               cursor: pointer;
               animation: color-change 0.4s infinite;
               @keyframes color-change {
-                0% { color: $white; }
-                50% { color: $yellow; }
-                100% { color: $white; }
+                0% {
+                  color: $white;
+                }
+                50% {
+                  color: $yellow;
+                }
+                100% {
+                  color: $white;
+                }
               }
             }
           }
@@ -401,7 +424,7 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        box-shadow: -21px 21px 46px 0px rgba(0,0,0,0.60);
+        box-shadow: -21px 21px 46px 0px rgba(0, 0, 0, 0.6);
         align-items: center;
         @media screen and (max-width: 1144px) {
           height: 450px;
@@ -411,8 +434,12 @@
           position: absolute;
           height: 300px;
           width: 25.15%;
-          background: rgb(0,0,0);
-          background: linear-gradient(180deg, rgba(0,0,0,0.4023984593837535) 0%, rgba(0,0,0,0.39959733893557425) 100%);
+          background: rgb(0, 0, 0);
+          background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.4023984593837535) 0%,
+            rgba(0, 0, 0, 0.39959733893557425) 100%
+          );
           z-index: 1;
           @media screen and (max-width: 1504px) {
             width: 38.06%;
@@ -420,7 +447,7 @@
           @media screen and (max-width: 1144px) {
             width: 77%;
             height: 450px;
-            box-shadow: 0px 21px 46px 0px rgba(0,0,0,0.60);
+            box-shadow: 0px 21px 46px 0px rgba(0, 0, 0, 0.6);
           }
         }
         &-title {
@@ -432,7 +459,7 @@
           width: 100%;
           text-align: center;
           z-index: 2;
-          box-shadow: inset 2px 3px 21px -1px rgba(0,0,0,0.5);
+          box-shadow: inset 2px 3px 21px -1px rgba(0, 0, 0, 0.5);
           padding: 3px 0;
           @media screen and (max-width: 1504px) {
             font-size: 38px;
@@ -497,7 +524,7 @@
             border: 2px solid $purple;
             border-radius: 5px;
             margin-right: 10px;
-            box-shadow: inset 2px 3px 21px -1px rgba(0,0,0,0.5);
+            box-shadow: inset 2px 3px 21px -1px rgba(0, 0, 0, 0.5);
             @media screen and (max-width: 1504px) {
               font-size: 22px;
             }
@@ -516,10 +543,10 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        box-shadow: 0px 21px 46px 0px rgba(0,0,0,0.60);
+        box-shadow: 0px 21px 46px 0px rgba(0, 0, 0, 0.6);
         align-items: center;
         @media screen and (max-width: $break-large) {
-          box-shadow: 21px 21px 46px 0px rgba(0,0,0,0.60);
+          box-shadow: 21px 21px 46px 0px rgba(0, 0, 0, 0.6);
         }
         @media screen and (max-width: 1144px) {
           height: 450px;
@@ -529,8 +556,12 @@
           position: absolute;
           height: 300px;
           width: 25.15%;
-          background: rgb(0,0,0);
-          background: linear-gradient(180deg, rgba(0,0,0,0.4023984593837535) 0%, rgba(0,0,0,0.39959733893557425) 100%);
+          background: rgb(0, 0, 0);
+          background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.4023984593837535) 0%,
+            rgba(0, 0, 0, 0.39959733893557425) 100%
+          );
           z-index: 1;
           @media screen and (max-width: 1504px) {
             width: 38.06%;
@@ -538,7 +569,7 @@
           @media screen and (max-width: 1144px) {
             width: 77%;
             height: 450px;
-            box-shadow: 0px 21px 46px 0px rgba(0,0,0,0.60);
+            box-shadow: 0px 21px 46px 0px rgba(0, 0, 0, 0.6);
           }
         }
         &-title {
@@ -550,7 +581,7 @@
           width: 100%;
           text-align: center;
           z-index: 2;
-          box-shadow: inset 2px 3px 21px -1px rgba(0,0,0,0.5);
+          box-shadow: inset 2px 3px 21px -1px rgba(0, 0, 0, 0.5);
           padding: 3px 0;
           @media screen and (max-width: 1504px) {
             font-size: 38px;
@@ -615,7 +646,7 @@
             border: 2px solid $purple;
             border-radius: 5px;
             margin-right: 10px;
-            box-shadow: inset 2px 3px 21px -1px rgba(0,0,0,0.5);
+            box-shadow: inset 2px 3px 21px -1px rgba(0, 0, 0, 0.5);
             @media screen and (max-width: 1504px) {
               font-size: 22px;
             }
@@ -638,13 +669,13 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        box-shadow: 21px 21px 46px 0px rgba(0,0,0,0.60);
+        box-shadow: 21px 21px 46px 0px rgba(0, 0, 0, 0.6);
         align-items: center;
         @media screen and (max-width: 1504px) {
           grid-column-start: 1;
           grid-column-end: -1;
           margin-top: 20px;
-          box-shadow: 0px 21px 46px 0px rgba(0,0,0,0.60);
+          box-shadow: 0px 21px 46px 0px rgba(0, 0, 0, 0.6);
         }
         @media screen and (max-width: 1144px) {
           height: 450px;
@@ -654,8 +685,12 @@
           position: absolute;
           height: 300px;
           width: 25.15%;
-          background: rgb(0,0,0);
-          background: linear-gradient(180deg, rgba(0,0,0,0.4023984593837535) 0%, rgba(0,0,0,0.39959733893557425) 100%);
+          background: rgb(0, 0, 0);
+          background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.4023984593837535) 0%,
+            rgba(0, 0, 0, 0.39959733893557425) 100%
+          );
           z-index: 1;
           @media screen and (max-width: 1504px) {
             width: 77%;
@@ -664,7 +699,7 @@
           @media screen and (max-width: 1144px) {
             width: 77%;
             height: 450px;
-            box-shadow: 0px 21px 46px 0px rgba(0,0,0,0.60);
+            box-shadow: 0px 21px 46px 0px rgba(0, 0, 0, 0.6);
           }
         }
         &-title {
@@ -676,7 +711,7 @@
           width: 100%;
           text-align: center;
           z-index: 2;
-          box-shadow: inset 2px 3px 21px -1px rgba(0,0,0,0.5);
+          box-shadow: inset 2px 3px 21px -1px rgba(0, 0, 0, 0.5);
           padding: 3px 0;
           @media screen and (max-width: 1504px) {
             font-size: 40px;
@@ -734,7 +769,7 @@
             border: 2px solid $purple;
             border-radius: 5px;
             margin-right: 10px;
-            box-shadow: inset 2px 3px 21px -1px rgba(0,0,0,0.5);
+            box-shadow: inset 2px 3px 21px -1px rgba(0, 0, 0, 0.5);
             @media screen and (max-width: 1504px) {
               font-size: 25px;
             }
@@ -770,7 +805,7 @@
         font-family: $textfont;
         font-weight: 900;
         color: $purple;
-        background-color: rgba(253,240,213, 0.9);
+        background-color: rgba(253, 240, 213, 0.9);
         font-size: 25px;
         line-height: 34px;
         margin-bottom: 55px;
@@ -799,9 +834,15 @@
         &:hover {
           animation: color-change 1s infinite;
           @keyframes color-change {
-            0% { color: $purple; }
-            50% { color: $yellow; }
-            100% { color: $purple; }
+            0% {
+              color: $purple;
+            }
+            50% {
+              color: $yellow;
+            }
+            100% {
+              color: $purple;
+            }
           }
         }
       }
@@ -839,7 +880,8 @@
           img {
             width: 28px;
             margin-right: 10px;
-            filter: invert(78%) sepia(33%) saturate(1482%) hue-rotate(358deg) brightness(108%) contrast(106%);
+            filter: invert(78%) sepia(33%) saturate(1482%) hue-rotate(358deg)
+              brightness(108%) contrast(106%);
           }
           h3 {
             font-family: $titlefont;
@@ -895,7 +937,7 @@
       flex-direction: column;
     }
     &-title {
-      font-family: $titlefont;
+      font-family: $textfont;
       font-size: 41px;
       color: $purple;
       max-width: 600px;
@@ -913,7 +955,7 @@
       }
     }
     &-form {
-      font-family: $navfont;
+      font-family: $textfont;
       font-size: 30px;
       font-weight: 900;
       color: $purple;
@@ -921,7 +963,7 @@
         border: 0;
         border-bottom: 2px solid $purple;
         background-color: $white;
-        font-family: $navfont;
+        font-family: $textfont;
         color: $purple;
         font-size: 25px;
         padding: 5px 10px;
@@ -931,7 +973,7 @@
         border-radius: 10px;
         border: 2px solid $yellow;
         background-color: $purple;
-        font-family: $navfont;
+        font-family: $textfont;
         color: $white;
         font-size: 25px;
         padding: 5px 10px;
@@ -950,9 +992,15 @@
         &:hover {
           animation: color-change 0.4s infinite;
           @keyframes color-change {
-            0% { color: $purple; }
-            50% { color: $yellow; }
-            100% { color: $purple; }
+            0% {
+              color: $purple;
+            }
+            50% {
+              color: $yellow;
+            }
+            100% {
+              color: $purple;
+            }
           }
         }
       }
@@ -977,23 +1025,27 @@
     a {
       img {
         width: 40px;
-        filter: invert(78%) sepia(33%) saturate(1482%) hue-rotate(358deg) brightness(108%) contrast(106%);
+        filter: invert(78%) sepia(33%) saturate(1482%) hue-rotate(358deg)
+          brightness(108%) contrast(106%);
       }
       &:hover {
         cursor: pointer;
         animation: bounce 1s linear;
       }
       @keyframes bounce {
-        20%,50%,80%,to{
+        20%,
+        50%,
+        80%,
+        to {
           transform: translateY(0);
         }
-        40%{
+        40% {
           transform: translateY(-11px);
         }
-        70%{
+        70% {
           transform: translateY(-6px);
         }
-        90%{
+        90% {
           transform: translateY(-3px);
         }
       }
@@ -1003,5 +1055,5 @@
 
 .whiteback {
   height: 100%;
-  background-color: rgba(253,240,213, 0.6);
+  background-color: rgba(253, 240, 213, 0.6);
 }
