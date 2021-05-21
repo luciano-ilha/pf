@@ -325,6 +325,19 @@
           margin-bottom: 40px;
         }
       }
+      &-image4 {
+        width: 100%;
+        background-image: url("../assets/images/pongscshot.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: -21px 21px 46px 0px rgba(0, 0, 0, 0.6);
+        @media screen and (max-width: $break-large) {
+          height: 400px;
+          box-shadow: 0px 21px 46px 0px rgba(0, 0, 0, 0.6);
+          margin-bottom: 40px;
+        }
+      }
       &-right {
         justify-content: space-evenly;
         flex-direction: column;
